@@ -4,7 +4,7 @@ def create_db():
     conn = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Hitec@123",
+        password="password",
         auth_plugin="mysql_native_password"  # add this
     )
     cursor = conn.cursor()
@@ -17,8 +17,8 @@ def get_connection():
     conn = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Hitec@123",
-        database="news_db",
+        password="password",
+        database="database",
         auth_plugin="mysql_native_password"  # add this
     )
     return conn
